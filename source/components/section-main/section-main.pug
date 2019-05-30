@@ -1,0 +1,81 @@
+mixin section-main
+	.sections-wrap
+		section.section.section-project#section-project(data-section-name="project")
+			.container
+				.section__container
+					h2.title.big-letter.big-letter--P Проектирование
+					.section__text
+						.text Разработка проектной документации необходимой для строительства от профильных специалистов
+
+					.section__advantages
+						ul.advantages
+							each item in data.dev
+								li.advantages__item
+									.advantages__icon
+										+svg(item.icon)
+									.advantages__text= item.text
+
+				.section__btn
+					button.btn#projectBtn Узнать больше  
+
+		section.project-more.hidden.more
+			.container
+				.more__btn-back
+					button.btn-back#projectBtnBack назад 
+
+				h3.title--small.big-letter.big-letter--P Проектирование
+				.more__text
+					p Я разрабатываю индивидуальные проекты домов, коттеджей, дач, корректировку готовых проектов, проектную документацию недорого в Москве, а также по всей московской области. 
+					p Многолетний опыт работы в области архитектуры и строительства позволяет выполнять проекты домов и коттеджей любых типов быстро, качественно.
+
+					
+				h4.more__title.more__title-points С качественным проектом вы экономите на:
+				ul.more__points
+					each item in data.projectPoints
+						li.more__points-item
+							.more__points-icon
+								+svg(item.icon)
+							.more__points-text= item.text
+				.more__text
+					p Мне интересно работать с частными заказчиками и создавать гармоничное пространство для их жизни.
+					p Я стараюсь учитывать предпочтения своих клиентов, их пожелания, но при этом, как специалист, я консультирую и рекомендую. 
+				h4.more__title В работе со мной можно расчитывать на:
+				ul.more__features
+					each item in data.projectFeatures
+						li.more__features-item= item  
+
+
+		section.section.section-building#section-building(data-section-name="building")
+			.container
+				h2.title.big-letter.big-letter--C Строительство 
+				.section__text.text 
+					|Строительно-монтажные работы по возведению зданий под контролем квалифицированных специалистов  
+				.section__btn
+					button.btn#buildBtn Узнать больше   
+
+		section.build-more.hidden.more
+			.container
+				.more__btn-back
+					button.btn-back#buildBtnBack назад 
+				h3.title--small.big-letter.big-letter--C Строительство 
+				.more__text
+					p Я предоставляю все услуги сразу — от разработки проекта дома  до строительства дома под ключ. Благодаря чему у Вас отпадает необходимость вести переговоры с несколькими компаниями одновременно. Вам не придется искать правду, портить свои нервы, тратить время и деньги. Заказывая у меня, Вы можете быть уверены в качестве и точности выполнения работ. Помните, покупка должна приносить удовольствие!
+				h4.more__title.more__title-points Выбирая меня, вы получаете:
+				ul.more__points
+					each item in data.buildPoints
+						li.more__points-item
+							.more__points-icon
+								+svg(item.icon)
+							.more__points-text= item.text
+				.more__text
+					p Процесс строительства я контролирую лично. Авторский надзор нужен для координации во время строительства.
+					p Наличие трехмерной модели дома помогает согласовывать задачи и находить ответы на вопросы возникающее по ходу строительства. Это исключает поспешные и непродуманные решения.
+				   
+				h4.more__title В работе со мной можно расчитывать на:
+				ul.more__features
+					each item in data.buildFeatures
+						li.more__features-item= item                 
+
+		.sections-wrap__btn
+			.btn-resize
+				+svg("resize")                 

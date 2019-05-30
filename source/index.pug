@@ -1,0 +1,18 @@
+extends static/pug/template
+include components/components
+
+block variables
+	- var title = 'Кузнецов Виктор'
+	- var description = 'description'
+	- var keywords = 'keywords'
+
+block content
+
+	div.page__wrapper#fullpage
+		+preloader
+		+header
+		+section-first-screen
+		+section-about
+		+section-works
+		+section-main
+		+section-map       

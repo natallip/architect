@@ -1,0 +1,20 @@
+mixin section-first-screen
+	
+	section.section.section-first-screen#section-first-screen(data-section-name="home")
+		.top-slider#top-slider.owl-carousel.owl-theme
+			each item in data.topSlider
+				.item.top-slider__img(style="background-image:url(/images/" + item + ")")                    
+
+		.container
+			.section-first-screen__wrap
+				h1.section-first-screen__title(class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="2s")
+					|Здесь вы можете заказать
+					span.section-first-screen__title-accent.big-letter проект дома
+				.section-first-screen__subtitle
+					|а также узнать про строительство в Москве или московской области
+				.section-first-screen__btn
+					button.btn(id="learnMore" data-div-name="project") Узнать подробнее
+		.section-first-screen__scroll
+			.scroll-btn(id="scrollDown" data-div-name="about")
+				+svg("scroll")            
+					

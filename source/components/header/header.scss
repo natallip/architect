@@ -1,0 +1,58 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 2px solid rgba(#fff, .08);
+  z-index: 10;
+  width: 100%;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;    
+  }
+  &__info {
+    @include media768 {
+      display: none;
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      &__item {
+        padding-left: 30px;
+        margin-bottom: 10px;
+        a {
+          color: $text;
+        }        
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &--phone {
+          background: url("/images/phone.svg") no-repeat 0% 50%/15px;
+        }
+        &--email {
+          background: url("/images/mail.svg") no-repeat 0% 50%/15px;
+        }
+      }
+    }
+  }
+}
+.logo { 
+  cursor: pointer; 
+  &__text {
+    font-family: 'Open Sans Bold';
+    font-size: 18px;
+    color: $text;
+    margin-bottom: 10px;
+    @include media768 {
+      font-size: 16px;
+    }
+  }
+  &__descr {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $accent;
+    letter-spacing: 1px;
+  }
+} 

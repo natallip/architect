@@ -1,0 +1,14 @@
+mixin header
+	header.header
+		.container.header__wrap
+			a.header__logo.logobtn(id="scrollHome" data-div-name="home")
+				.logo__text Кузнецов Виктор
+				.logo__descr частный архитектор
+			+nav
+			.header__info
+				ul.info
+					li.info__item.info__item--phone
+						a(href="tel:+7(916)226-44-22") +7(916) 226-44-22
+					li.info__item.info__item--email 
+						a(href="mailto:kusnecov@gmail.com")  kusnecov@gmail.com
+			+burger            

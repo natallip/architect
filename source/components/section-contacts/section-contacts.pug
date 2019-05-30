@@ -1,0 +1,20 @@
+mixin section-map
+	section.section.section-map#section-map(data-section-name="contacts")
+		.section-map__contacts 
+			.contacts
+				h2.title.big-letter.big-letter--K Контакты
+				ul.contacts__list
+					each item in data.contacts
+						li.contacts__item
+							.contacts__icon
+								+svg(item.icon)
+							.contacts__name= item.name + ":"
+							.contacts__text= item.text       
+
+				ul.contacts__socials.socials
+					each item in data.socials
+						li.socials__item
+							+svg(item)  
+			.footer
+				.footer__copyright Кузнецов Виктор © 2019                     
+		#map

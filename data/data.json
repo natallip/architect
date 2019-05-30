@@ -1,0 +1,40 @@
+{
+  "topSlider": ["i26.jpg", "i33.jpg", "i3.jpg"],
+  "dev": [
+    {"icon": "deal", "text": "Оптимальные цены"},
+    {"icon": "hourglass", "text": "Выполнение в срок"},
+    {"icon": "briefcase", "text": "Квалифицированный подход"}
+  ],
+  "works": ["i4.jpg", "i32.jpg", "i33.jpg", "i41.jpg", "i26.jpg", "i9.jpg", "i3.jpg", "i35.jpg", "i14.jpg"],
+  "contacts": [
+    {"icon": "placeholder", "name": "адрес", "text": "Санкт-Петербург, Садовая улица, 70, офис №8"},
+    {"icon": "phone", "name": "телефон", "text": "+7 (916) 226-44-22"},
+    {"icon": "mail", "name": "почта", "text": "kusnecov@gmail.com"},
+    {"icon": "skype", "name": "skype", "text": "kusnecov-v"}
+  ],
+  "socials": ["vk", "facebook", "linkedin", "instagram", "google"],
+  "projectPoints": [
+    {"icon": "calculator", "text": "перерасходе материалов"},
+    {"icon": "links", "text": "отсутствии завышенного обьема работ"},
+    {"icon": "wall", "text": "получаете надежные несущие конструкции"},
+    {"icon": "hand", "text": "а самое главное - сохраняете свое время"}
+  ],
+  "projectFeatures": ["индивидуальный подход", "профессионализм", "гарантия на согласование", "быстрые сроки", "разумную стоимость"],
+  "projectBlocks": [
+    {"icon": "mail", "name": "почта", "text": "kusnecov@gmail.com"},
+    {"icon": "mail", "name": "почта", "text": "kusnecov@gmail.com"},
+    {"icon": "mail", "name": "почта", "text": "kusnecov@gmail.com"}
+  ],
+  "buildPoints": [
+    {"icon": "guarantee", "text": "гарантии"},
+    {"icon": "result", "text": "отчетность"},
+    {"icon": "binoculars", "text": "надзор"},
+    {"icon": "support", "text": "профессионализм"}
+  ],
+  "buildFeatures": ["высокую квалификацию", "качественную работу", "прозрачную смету", "оптимальные решения"],
+  "buildBlocks": [
+    {"icon": "mail", "name": "почта", "text": "kusnecov@gmail.com"},
+    {"icon": "mail", "name": "почта", "text": "kusnecov@gmail.com"},
+    {"icon": "mail", "name": "почта", "text": "kusnecov@gmail.com"}
+  ]
+}
